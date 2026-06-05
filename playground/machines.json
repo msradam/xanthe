@@ -1,0 +1,7 @@
+{
+  "tic-tac-toe": "examples/stately/tic-tac-toe.ts#ticTacToe",
+  "water-jugs": "examples/stately/water-jugs.ts#waterJugs",
+  "river-crossing": "examples/stately/river-crossing.ts#riverCrossing",
+  "incident": "examples/incident.ts#incident",
+  "coffee": "examples/coffee.ts#coffee"
+}

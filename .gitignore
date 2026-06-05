@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.xanthe/
+.xs-examples/
+.mcp.json
+.xanthe-playground/
+docs/dependency-graph.svg
+coverage/

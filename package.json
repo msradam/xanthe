@@ -1,0 +1,79 @@
+{
+  "name": "xanthe",
+  "version": "0.1.0",
+  "description": "Mount a plain XState v5 machine as an MCP server and drive any model on rails, with a hash-chained ledger of every step taken and refused.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Adam Munawar Rahman",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "xstate",
+    "state-machine",
+    "statechart",
+    "agent",
+    "llm",
+    "ledger",
+    "guardrails"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msradam/xanthe"
+  },
+  "homepage": "https://github.com/msradam/xanthe#readme",
+  "bugs": {
+    "url": "https://github.com/msradam/xanthe/issues"
+  },
+  "bin": {
+    "xanthe": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli.ts",
+    "primer": "tsx src/cli.ts primer",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "introspect": "madge --extensions ts --circular src/index.ts",
+    "introspect:graph": "madge --extensions ts --image docs/dependency-graph.svg src/index.ts",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "jiti": "^2.4.2",
+    "xstate": "5.32.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@vitest/coverage-v8": "^2.1.9",
+    "eslint": "^9.39.4",
+    "madge": "^8.0.0",
+    "prettier": "^3.8.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.60.1",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

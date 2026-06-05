@@ -1,0 +1,15 @@
+Xanthe
+Copyright (c) 2026 Adam Munawar Rahman
+Licensed under the MIT License (see LICENSE).
+
+This product includes state machines adapted from @statelyai/agent
+(https://github.com/statelyai/agent), licensed under the MIT License,
+Copyright (c) 2025 Stately Software, Inc.:
+
+  examples/stately/water-jugs.ts      adapted from examples/jugs.ts
+  examples/stately/tic-tac-toe.ts     adapted from examples/ticTacToe.ts
+  examples/stately/river-crossing.ts  adapted from examples/river-crossing.ts
+
+The machine definitions (states, events, guards, context) are adapted; the
+in-process LLM driver, text-generation actors, and I/O were removed so the
+machines can be driven externally over MCP.
