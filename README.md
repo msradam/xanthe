@@ -2,6 +2,8 @@
 
 Mount a plain [XState v5](https://stately.ai/docs/xstate) state machine as an [MCP](https://modelcontextprotocol.io) server and drive any model on rails. The agent may only take steps the machine allows; every step taken and every step refused goes into a hash-chained ledger. Sessions can be reset and forked.
 
+![Xanthe validating a machine and running the offline primer](docs/demo.gif)
+
 Xanthe is the TypeScript sibling of [Theodosia](https://github.com/msradam/theodosia), which does the same thing over Burr in Python. Xanthe is to XState as Theodosia is to Burr: the concepts (gate, refuse, record, fork, verify) are the same, and the surface speaks XState's own vocabulary, events, `value`, `context`, and the moves you can `send`.
 
 ## What it is
