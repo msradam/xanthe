@@ -2,7 +2,9 @@
 
 Mount a plain [XState v5](https://stately.ai/docs/xstate) state machine as an [MCP](https://modelcontextprotocol.io) server and drive any model on rails. The agent may only take steps the machine allows; every step taken and every step refused goes into a hash-chained ledger. Sessions can be reset and forked.
 
-![Xanthe validating a machine and running the offline primer](docs/demo.gif)
+![Claude driving an incident runbook on rails through Xanthe over MCP](docs/agent.gif)
+
+_Claude driving the [incident-agent](https://github.com/msradam/xanthe-incident-agent) example over MCP: it tries an out-of-order `resolve`, gets refused, then walks the runbook to a postmortem. Every step is gated and recorded._
 
 Xanthe is the TypeScript sibling of [Theodosia](https://github.com/msradam/theodosia), which does the same thing over Burr in Python. Xanthe is to XState as Theodosia is to Burr: the concepts (gate, refuse, record, fork, verify) are the same, and the surface speaks XState's own vocabulary, events, `value`, `context`, and the moves you can `send`.
 
@@ -39,6 +41,8 @@ npm run primer
 ```
 
 Runs a tiny coffee-order machine offline and deterministically: it drives `step`, a refusal, and a `fork` itself, then verifies the chains. No API key, no external client. The output is identical every run.
+
+![xanthe primer](docs/demo.gif)
 
 ### 2. Point at a machine and serve it
 
