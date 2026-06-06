@@ -16,18 +16,16 @@ The durable ledger is over Xanthe's own canonical state, the `{ value, context }
 
 ## Install
 
-From source (the `prepare` script builds `dist/` on install):
+```sh
+npm install @msradam/xanthe
+```
+
+The `xanthe` CLI is installed as a bin. Or from source (the `prepare` script builds `dist/`):
 
 ```sh
 git clone https://github.com/msradam/xanthe
 cd xanthe
 npm install
-```
-
-Or as a dependency (not yet on npm):
-
-```sh
-npm install github:msradam/xanthe
 ```
 
 Pinned to `xstate@5.32.0` and `@modelcontextprotocol/sdk@1.29.0`.

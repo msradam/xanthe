@@ -1,9 +1,12 @@
 {
-  "name": "xanthe",
-  "version": "0.1.1",
+  "name": "@msradam/xanthe",
+  "version": "0.1.2",
   "description": "Mount a plain XState v5 machine as an MCP server and drive any model on rails, with a hash-chained ledger of every step taken and refused.",
   "type": "module",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Adam Munawar Rahman",
   "keywords": [
     "mcp",
