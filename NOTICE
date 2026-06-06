@@ -1,6 +1,6 @@
 Xanthe
 Copyright (c) 2026 Adam Munawar Rahman
-Licensed under the MIT License (see LICENSE).
+Licensed under the Apache License, Version 2.0 (see LICENSE).
 
 This product includes state machines adapted from @statelyai/agent
 (https://github.com/statelyai/agent), licensed under the MIT License,

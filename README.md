@@ -206,4 +206,5 @@ This package was built with LLM assistance.
 
 ## License
 
-MIT
+Apache-2.0. The three machines under `examples/stately/` are adapted from
+`@statelyai/agent` (MIT); see `NOTICE`.
